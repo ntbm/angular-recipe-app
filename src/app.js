@@ -56,7 +56,7 @@ angular
             "<div class='container-fluid'>" +
                 "<h3>{{recipe.title}}</h3>" +
                 "<div class='row' >" +
-                    "<div class='ingredients col-xs-12 col-md-3'>" +
+                    "<div class='ingredients col-xs-12'>" +
                         "<div class='panel panel-default'>" +
                             "<div class='panel-heading'>Zutaten</div>" +
                             "<div class='panel-body'>" +
@@ -71,10 +71,12 @@ angular
                             "</div>" +
                         "</div>" +
                     "</div>" +
-                    "<div class='col-xs-12 col-md-9'>" +
-                        "<ul ng-repeat='step in recipe.instructions'>" +
-                            "<li>{{step.instruction}}</li>" +
-                        "</ul>" +
+                    "<div class='row'>" +
+                        "<div class='col-xs-12'>" +
+                            "<ul ng-repeat='step in recipe.instructions'>" +
+                                "<li>{{step.instruction}}</li>" +
+                            "</ul>" +
+                        "</div>" +
                     "</div>" +
                 "</div>" +
             "</div>"
